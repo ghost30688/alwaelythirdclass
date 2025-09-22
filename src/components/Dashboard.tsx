@@ -27,7 +27,7 @@ export function Dashboard({ student }: DashboardProps) {
   // تهيئة المواد إذا لم تكن موجودة
   useEffect(() => {
     if (subjects && subjects.length === 0) {
-      initializeSubjects();
+      initializeSubjects({});
     }
   }, [subjects, initializeSubjects]);
 
